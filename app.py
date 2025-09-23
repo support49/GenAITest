@@ -12,6 +12,9 @@ def add(x,y):
 def sub(x,y):
     return (int(x)-int(y))
 
+@app.post("/sayHello/{name}")
+def sayName(name):
+    return ("Hello "+ name)
 # x = int(input("give the value of x : "))
 # y = int(input("give the value of y : "))
 
